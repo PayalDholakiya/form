@@ -21,11 +21,11 @@ function input() {
   btn.className = 'close'
   btn.style.marginLeft = '90%'
   li.appendChild(btn)
-  div.appendChild(li)
+  ul.appendChild(li)
   btn.onclick = function () {
     var del = confirm('are you sure for delete')
     if (del) {
-      li.style.display = 'none'
+      li.remove('list')
     }
   }
 }

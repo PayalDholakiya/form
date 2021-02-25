@@ -12,20 +12,27 @@ h4 {
   border: 1px solid gainsboro;
   margin-bottom: 2%;
 }
+.form {
+  width: 100%;
+  margin: auto;
+}
 #display {
   height: 30%;
-  margin-left: 10%;
-  margin-bottom: 3%;
+  /* margin-left: 10%; */
+  margin: 3% 5% 6% 20%;
+  /* margin-bottom: 3%; */
   overflow-y: scroll;
 }
 .input-data {
   height: 20%;
-  background-color: rgb(155, 139, 154);
+  background-color: rgb(204, 203, 203);
   display: flex;
   align-items: center;
   flex-direction: row;
   padding-left: 10%;
   padding-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .add input {
   width: 150px;
@@ -47,4 +54,16 @@ input[type='text'] {
 #my_select {
   height: 35px;
   border-radius: 3px;
+}
+@media screen and (max-width: 1100px) {
+  .input-data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .add input {
+    margin-top: 5px;
+    margin-left: 30px;
+  }
 }
